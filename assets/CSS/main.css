@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,300;0,500;1,100;1,200&display=swap');
+
+/* Mobile first*/
+
+.container {
+    background: #276db4;  
+    background: -webkit-linear-gradient(to right, #41a6b6, #2C3E50);  
+    background: linear-gradient(to right, #4CA1AF, #2C3E50); 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.content {
+    width: 80%;
+    max-height: 50vh;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 110, 0.2) 0px 7px 29px 0px;
+    padding: 1.8rem;
+    position: relative;
+    overflow: auto;
+}
+td {
+    display: block;
+    width: 100%;
+}
+th {
+    display: none;
+}
+td:nth-of-type(1) {
+    color: #2C3E50;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+}
+
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color:#41a6b6;
+}
+
+.close {
+    float: right;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 110, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.close:hover {
+    filter: opacity(80%);
+}
+
+.titulo {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.parrafo {
+    color: black;
+    font-weight: 100;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+.tabla{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.tabla th, .tabla td {
+    text-align: left;
+    padding: 1rem;
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #41a6b6;
+}
+
+.fa-star {
+    color: gold;
+}
+
+.position {
+    background-color: #41a6b6;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 1rem;
+}
+
+.titulo-item {
+    border-bottom-style:solid ;
+    border-width: 2px;
+    border-color: #2C3E50;
+    padding-bottom: 1rem;
+}
+
+
+.foto{
+    float: left;
+    width: 200px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    filter:saturate(1.7)
+    
+}
+
+.direccion {
+    color: #2C3E50;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.foto:hover {
+    filter: blur(0);
+}
+
+.link {
+    color: black;
+}
+
+.link:visited {
+    color: grey;
+}
+
+@media (min-width: 820px) {
+    .content {
+        height: 500px;
+    }
+    th, td{
+        display: table-cell;
+    }
+    td {
+        width: auto;
+    }
+    td:nth-last-of-type(1) {
+        font-size: 1rem;
+        font-weight: 400;
+        color: black;
+    }
+}
